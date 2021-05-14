@@ -2,10 +2,10 @@
  * Converts US dollars to Swiss francs.
  *
  * @param {number} dollars The total number of dollars.
- * @return {number} swissFrancs The converted total of Swiss francs.
+ * @return {string} swissFrancs The provided value in Swiss francs.
  * @customfunction
  */
 function USDTOCHF(dollars){
-  var swissFrancs = dollars * .99; 
-  return swissFrancs;
+  var swissFrancs = dollars * .99;
+  return 'CHF' + swissFrancs;
 }
