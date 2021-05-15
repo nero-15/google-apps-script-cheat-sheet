@@ -13,4 +13,8 @@ function duplicateAndOrganizeActiveSheet() {
   // Format the new sheet.
   duplicateSheet.autoResizeColumns(1, 5);
   duplicateSheet.setFrozenRows(2);
+
+  // Move column F to column C.
+  var myRange = duplicateSheet.getRange("F2:F");
+  myRange.moveTo(duplicateSheet.getRange("C2"));
 }
