@@ -17,4 +17,8 @@ function duplicateAndOrganizeActiveSheet() {
   // Move column F to column C.
   var myRange = duplicateSheet.getRange("F2:F");
   myRange.moveTo(duplicateSheet.getRange("C2"));
+
+  // Sort all the data using column C (Price information).
+  myRange = duplicateSheet.getRange("A3:D55");
+  myRange.sort(3);
 }
